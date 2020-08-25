@@ -24,25 +24,28 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 ## Step 2
 
-## Instalar o ESP-IDF
+## Install ESP-IDF (by Expressif Guide)
 ```bash 
 cd ~/esp
 git clone -b v4.0.1 --recursive https://github.com/espressif/esp-idf.git
 ```
 
-## Step 3. Set up the tools
+## Step 3. Set up the tools (by Expressif Guide)
 ```bash
 cd ~/esp/esp-idf
 ./install.sh
 ```
 
-## Step 4
+## Step 4 - Install ESP-MDF (by Expressif Guide)
 ```bash
 cd ~/esp/
 git clone --recursive https://github.com/espressif/esp-mdf.git
 cd ~/esp/esp-mdf
 ```
+### Tricks
+
 Edit the `export.sh` file and comment this  lines bellow
+
 ```bash
 #export IDF_PATH="${MDF_PATH}/esp-idf"
 #idf_export_main
